@@ -51,7 +51,7 @@ nav ul a {
 
 nav ul a:hover {
     background-color: rgba(0, 0, 0, 0);
-    color: #ff8f00;
+    color: red;
 }
 
 nav .brand-logo {
@@ -193,8 +193,17 @@ nav .brand-logo {
     padding: 10px 25px;
     border-radius: 25px;
     cursor: pointer;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
 }
-
+.about button:hover {
+    background: none;
+    color: #000;
+    border: 2px solid #ff8f00;
+}
 /* serveice */
 
 .service {
@@ -650,6 +659,7 @@ footer h6 {
 @media screen and (max-width: 600px) {
     .home .home-content h1 {
         font-size: 20px;
+        font-weight: 900;
     }
 
     .home .home-content p {
@@ -663,6 +673,7 @@ footer h6 {
 
 @media screen and (max-width: 400px) {
     .home .home-content h1 {
-        font-size: 15px;
+        font-size: 25px;
+        font-weight: 900;
     }
 }
